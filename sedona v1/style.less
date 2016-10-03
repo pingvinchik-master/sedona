@@ -1,0 +1,251 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}    
+body {
+  background: #f2f2f2;
+  font-family: 'PT Sans', sans-serif;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  background: #fff;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  text-decoration: underline;
+}
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 21px;
+  line-height: 26px;
+}
+.counter {
+  padding: 25px 0;
+}
+.main-menu {
+  display: flex;
+  justify-content: space-around;
+  height: 55px;
+  &__item {
+    list-style: none;
+    margin: auto;
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  &__item--logo {
+    padding: 0;
+    z-index: 999;
+  }
+}
+.slider {
+ /* background: url("images/slider.png") top center no-repeat;
+  background-position: cover;*/
+}
+.about {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 55px 0;
+  &__intro {
+    padding-top:40px;
+  }
+
+}
+.advantages-item{
+  display: flex; 
+  height: 252px;
+  background: #81b3d2;
+  &__descr {
+    flex-basis: 33%;
+    margin: auto;
+    
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;    
+  }
+  &__photo {
+    flex-basis: 66%;
+    background: url('images/adv.jpg')center center no-repeat;
+  }
+  &--odd {
+    .advantages-item__descr {
+      order: 1;
+    }
+    .advantages-item__photo {
+      order: 2;
+      background-position: 0 0;
+    }
+  }
+  &--even {
+    .advantages-item__descr {
+      order: 2;
+    }
+    .advantages-item__photo {
+      order: 1;
+      background-position: 0 -252px;
+    }
+  }
+  &__title {
+    font-size: 21px;
+    font-weight: bold;
+    margin: 30px 0;
+  } 
+}
+.city-descr {
+  display: flex;
+  padding: 65px;
+  &__item {
+    flex-basis: 33%;
+    /*background: url('images/adv_logo.png') center top no-repeat;*/
+    padding: 0 50px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__icon {
+    background: url('images/adv_logo.png') center top no-repeat;
+    width: 75px;
+    height: 78px;
+    margin: auto;
+  }
+  &__icon--house {
+    background-position: 0 0;
+  }
+  &__icon--food {
+    background-position: -75px 0;
+  }
+  &__icon--souvenirs {
+    background-position: -155px 0;
+  }
+  &__info {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  &__title {
+    margin: 30px 0
+  }
+  &--adv-list {
+    background: #eee;
+  }
+}
+
+.footer {
+  display: flex;
+  height: 120px;
+  text-transform: uppercase;
+  &__links {
+    flex-basis: 33%;
+    margin: auto;
+    text-align: center;
+  }
+  &__author {
+    display: flex;
+  }
+  &__social-link {
+    display: inline-block;
+    margin-right: 5px;
+   }
+}
+
+.social-link {
+  /*background: url('images/social-links.png');
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 5px;
+  width: 45px;
+  height: 48px;
+  &--twitter {
+    background-position: -5px 0;
+  }
+  &--facebook{
+    background-position: -55px 0;
+  }
+  &--youtube {
+    background-position: -105px 0;
+  }*/
+}
+
+.gallery-section {
+  text-align: center;
+  text-transform: uppercase;
+  &__intro {
+    font-size: 14px; 
+    line-height: 24px;     
+    padding-top: 40px;
+  }
+  &__view {
+    padding: 75px 0;
+  }
+  &__view-cover {
+    position: relative;
+  }
+  &__view-list {
+    display: flex;
+  }
+  &__view-item {
+    background: url("images/album_photo.jpg")left top no-repeat;
+    flex-basis: 33.3333%;
+    position: relative;
+    height: 267px;
+  }
+  &__title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: rgba(0, 0, 0, .3);
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__photo-name{
+    flex-basis: 70%;
+    order: 1;
+  
+  }
+  &__like {
+    flex-basis: 30%;
+    order: 2;
+    margin: auto 0;
+  }
+  &__author {
+    text-transform: none;
+    order:3;
+    flex-basis: 100%;
+  }
+}
+
+
+.guestbook {
+  display: flex;
+  &__2col {
+    flex-basis: 50%;
+    margin-left: 10%;
+    border: none;
+  }
+  &__2col:first-of-type {
+    border-right: 1px solid #dbdbdb;
+  }
+}
+.guestbook-form__title{
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.guestbook-form__label{
+  text-transform: uppercase;
+}
+input[type="text"] {
+  background: #f2f2f2;
+}
