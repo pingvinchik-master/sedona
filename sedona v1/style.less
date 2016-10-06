@@ -57,6 +57,7 @@ h2 {
   padding: 55px 0;
   &__intro {
     padding-top:40px;
+    font-size: 14px;
   }
 
 }
@@ -71,6 +72,10 @@ h2 {
     text-align: center;
     text-transform: uppercase;
     color: #fff;    
+  }
+  &__intro {
+    font-size: 14px;
+    line-height: 21px;
   }
   &__photo {
     flex-basis: 66%;
@@ -109,12 +114,14 @@ h2 {
     padding: 0 50px;
     text-align: center;
     text-transform: uppercase;
+    font-size: 14px;
+    line-height: 21px;
   }
   &__icon {
     background: url('images/adv_logo.png') center top no-repeat;
     width: 75px;
     height: 78px;
-    margin: auto;
+    margin: auto auto 30px auto;
   }
   &__icon--house {
     background-position: 0 0;
@@ -128,15 +135,39 @@ h2 {
   &__info {
     font-size: 14px;
     line-height: 21px;
+    margin-top: 30px;
   }
   &__title {
-    margin: 30px 0
+    margin: 30px 0;
   }
   &--adv-list {
     background: #eee;
   }
 }
-
+.callback {
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 60px 0;
+  &__header {
+    font-size: 30px;
+    line-height: 26px;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  &__find-hotel {
+    font-size: 21px;
+    line-height: 26px;
+    color: #fff;
+    font-weight: bold;
+    background: #81b3d2;
+    padding: 20px 0;
+    margin: 50px auto 0 auto;
+    display: block;
+    width: 460px;
+  }
+}
 .footer {
   display: flex;
   height: 120px;
@@ -272,4 +303,12 @@ h2 {
 }
 input[type="text"] {
   background: #f2f2f2;
+}
+
+
+
+.section-title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
 }
