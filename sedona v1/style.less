@@ -1,21 +1,11 @@
-
+@import "blocks-style/structure.less";
+@import "blocks-style/advantages.less";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;  
 }    
-body {
-  background: #f2f2f2;
-  font-family: 'PT Sans', sans-serif;
-}
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  background: #fff;
-  -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.8);
-  -moz-box-shadow:    0px 5px 15px 0px rgba(0, 1, 1, 0.8);
-       box-shadow:    0px 5px 15px 0px rgba(0, 1, 1, 0.8);
-}
+
 a {
   text-decoration: none;
   color: #000;
@@ -52,8 +42,9 @@ h2 {
   }
 }
 .slider {
- /* background: url("images/slider.png") top center no-repeat;
-  background-position: cover;*/
+  background: url("images/slider.png") top center no-repeat;
+  background-position: cover;
+  height: 519px;
 }
 .about {
   text-transform: uppercase;
@@ -65,91 +56,8 @@ h2 {
   }
 
 }
-.advantages-item{
-  display: flex; 
-  height: 252px;
-  background: #81b3d2;
-  &__descr {
-    flex-basis: 33%;
-    margin: auto;
-    
-    text-align: center;
-    text-transform: uppercase;
-    color: #fff;    
-  }
-  &__intro {
-    font-size: 14px;
-    line-height: 21px;
-    width: 270px;
-    margin: 0 auto;
-  }
-  &__photo {
-    flex-basis: 66%;
-    background: url('images/adv.jpg')center center no-repeat;
-  }
-  &--odd {
-    .advantages-item__descr {
-      order: 1;
-    }
-    .advantages-item__photo {
-      order: 2;
-      background-position: 0 0;
-    }
-  }
-  &--even {
-    .advantages-item__descr {
-      order: 2;
-    }
-    .advantages-item__photo {
-      order: 1;
-      background-position: 0 -252px;
-    }
-  }
-  &__title {
-    font-size: 21px;
-    font-weight: bold;
-    margin: 30px 0;
-  } 
-}
-.city-descr {
-  display: flex;
-  padding: 65px;
-  &__item {
-    flex-basis: 33%;
-    /*background: url('images/adv_logo.png') center top no-repeat;*/
-    padding: 0 50px;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 21px;
-  }
-  &__icon {
-    background: url('images/adv_logo.png') center top no-repeat;
-    width: 75px;
-    height: 78px;
-    margin: auto auto 30px auto;
-  }
-  &__icon--house {
-    background-position: 0 0;
-  }
-  &__icon--food {
-    background-position: -75px 0;
-  }
-  &__icon--souvenirs {
-    background-position: -155px 0;
-  }
-  &__info {
-    font-size: 14px;
-    line-height: 21px;
-    margin-top: 30px;
-  }
-  &__title {
-    margin: 30px 0;
-  }
-  &--adv-list {
-    background: #eee;
-  }
-}
+
+
 .callback {
   font-size: 14px;
   line-height: 24px;
