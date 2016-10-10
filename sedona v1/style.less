@@ -179,11 +179,47 @@ input[type="text"] {
   line-height: 26px;
   font-weight: bold;
   &--main {
-    width: 430px;
-    margin: 0 auto;
+    /*width: 430px;
+    margin: 0 380px;*/
   }
   &--sub {
     width: 115px;
     margin: 0 auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .section-title {
+    &--main {
+      padding: 0 140px;
+    }
+  }
+  .about__intro {
+    padding: 40px 140px 0 140px;
+    line-height: 26px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .section-title {
+    font-size: 18px;
+    &--main {
+      padding: 0 30px;
+    }
+  }
+  .about {
+    position: relative;
+  }
+  .about:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    margin-left: -160px;
+    border-left: 160px solid transparent;
+    border-right: 160px solid transparent;
+    border-top: 15px solid #fff;
+  }
+  .about__intro {
+    padding: 40px 35px 0 35px;
+    line-height: 26px;
   }
 }
