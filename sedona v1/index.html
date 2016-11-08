@@ -8,24 +8,42 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet/less" href="style.less">
   <link rel="stylesheet" type="text/css" href="reset.css">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet"> 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="less/dist/less.js" type="text/javascript"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.main-menu__item--close').click(function(){
+        $('.main-menu__item').css('display', 'none');
+        $('.main-menu__item--logo').css('display', 'block');
+        //$('.main-menu__item').toggleClass('click');
+      })
+    })
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.main-menu__item--logo').click(function(){
+        $('.main-menu__item').css('display', 'block');
+        $('.main-menu__item--logo').css('display', 'none');
+        //$('.main-menu__item').toggleClass('click');
+      })
+    })
+  </script>
 </head>
 <body>
   <div class="container">
     <div class="header">
       <div class="nav">
         <ul class="main-menu">
-          <li class="main-menu__item">
+          <li class="main-menu__item  main-menu__item--close">
             <a href="index.html">Главная</a>
           </li>
           <li class="main-menu__item">
             <a href="photogallery.html">Фото и видео</a>
           </li>
           <li class="main-menu__item main-menu__item--logo">
-            <a href="#"><img src="images/logo.png"></a>
+            <a href="#"><img src="images/logo-mobile.png"></a>
           </li>
           <li class="main-menu__item">
             <a href="guestbook.html">Форма отзыва</a>
@@ -45,7 +63,7 @@
       <div class="about__intro">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон.</div>
     </div>
     <div  class="advantages-item advantages-item--odd">
-        <div class="advantages-item__descr">
+        <div class="advantages-item__descr  advantages-item__descr--city">
           <h2 class="section-title">
             Настоящий городок
           </h2>  
@@ -61,31 +79,34 @@
         </div>
     </div>
     <div class="city-descr">
-      <div class="city-descr__item">
+      <div class="city-descr__item  city-descr__item--pictured">
         <div class="city-descr__icon  city-descr__icon--house">
         </div>
-        <h2 class="section-title">Жилье</h2>
-        <div class="city-descr__info">Рекомендуем пожить в настоящем мотеле, все как в кино!</div>
+        <div class="city-descr__info">
+          <h2 class="section-title  section-title--no-counter">Жилье</h2>
+          Рекомендуем пожить в настоящем мотеле, все как в кино!</div>
       </div>
-      <div class="city-descr__item">
-        <div class="city-descr__icon  city-descr__icon--food">
-        </div>
-        <h2 class="section-title">Еда</h2>
-        <div class="city-descr__info">Всегда заказывайте фирменный бургер!
-          Вы не разочаруетесь!
-        </div>  
-      </div>
-      <div class="city-descr__item">
+      <div class="city-descr__item  city-descr__item--pictured">
         <div class="city-descr__icon  city-descr__icon--souvenirs">
         </div>
-        <h2 class="section-title">Сувениры</h2>
-        <div class="city-descr__info">Не только китайского, но и местного производства!
+        <div class="city-descr__info">
+          <h2 class="section-title  section-title--no-counter">Сувениры</h2>
+          Не только китайского, но и местного производства!
         </div>
       </div>
+      <div class="city-descr__item  city-descr__item--pictured">
+        <div class="city-descr__icon  city-descr__icon--food">
+        </div>
+        <div class="city-descr__info">
+          <h2 class="section-title  section-title--no-counter">Еда</h2>
+          Всегда заказывайте фирменный бургер!
+          Вы не разочаруетесь!
+        </div>
       </div>
+    </div>
 
       <div  class="advantages-item advantages-item--even">
-        <div class="advantages-item__descr">
+        <div class="advantages-item__descr  advantages-item__descr--bridge">
           <h2 class="section-title">
           Там есть мост дьявола
           </h2>
