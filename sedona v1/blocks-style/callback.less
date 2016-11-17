@@ -1,0 +1,46 @@
+.callback {
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 60px 370px;
+  /*width: 460px;*/
+  margin: 0 auto;
+  &__header {
+    font-size: 30px;
+    line-height: 26px;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  &__find-hotel {
+    font-size: 21px;
+    line-height: 26px;
+    color: #fff;
+    font-weight: bold;
+    background: #81b3d2;
+    padding: 20px 0;
+    margin: 50px auto 0 auto;
+    display: block;
+    /*width: 460px;*/
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px){
+  .callback {
+    padding: 60px 155px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+  .callback {
+    padding: 0 20px;
+    &__header {
+      margin: 30px 0;
+      font-size: 21px;
+    }
+    &__find-hotel {
+      margin: 40px 0;
+      padding: 20px 40px;
+    }
+  }
+}
